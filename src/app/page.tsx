@@ -15,7 +15,7 @@ export default function Home() {
         <div className="px-5">
           <Separator orientation="horizontal" />
         </div>
-        <div className="p-5 flex flex-row flex-1 ">
+        <div className="p-5 flex flex-row">
           <div className="flex-3">
             <Charts />
           </div>

@@ -24,42 +24,39 @@ const chartData = [
   { month: "March", desktop: 512, mobile: 387 },
   { month: "April", desktop: 629, mobile: 521 },
   { month: "May", desktop: 458, mobile: 412 },
-  { month: "June", desktop: 781, mobile: 598 },
-  { month: "July", desktop: 394, mobile: 312 },
-  { month: "August", desktop: 925, mobile: 743 },
+  { month: "June", desktop: 115, mobile: 598 },
+  { month: "July", desktop: 1325, mobile: 312 },
+  { month: "August", desktop: 225, mobile: 743 },
   { month: "September", desktop: 647, mobile: 489 },
   { month: "October", desktop: 532, mobile: 476 },
   { month: "November", desktop: 803, mobile: 687 },
-  { month: "December", desktop: 271, mobile: 198 },
+  { month: "December", desktop: 0, mobile: 780 },
 ];
 
 const chartConfig = {
   desktop: {
     label: "Desktop",
-    color: "var(--chart-1)",
+    color: "var(--chart-6)",
   },
   mobile: {
     label: "Mobile",
-    color: "var(--chart-2)",
+    color: "var(--chart-3)",
   },
 } satisfies ChartConfig;
 
 export function Charts() {
   return (
-    <Card className="bg-gray-950/40 w-full h-full">
+    <Card className="bg-gray-950/40 w-full h-full rounded-sm">
       <CardHeader>
         <CardTitle>
-          Model Trades
-          <Badge
-            variant="outline"
-            className="text-green-500 bg-green-500/10 border-none ml-2"
-          >
-            <TrendingUp className="h-4 w-4" />
-            <span>5.2%</span>
-          </Badge>
+          <p className="tracking-tighter font-mono text-sm font-semibold">
+            Model Portfolio
+          </p>
         </CardTitle>
         <CardDescription>
-          Showing total visitors for the last 6 months
+          <p className="font-sans text-sm">
+            Showing total visitors for the last 6 months
+          </p>
         </CardDescription>
       </CardHeader>
       <CardContent>

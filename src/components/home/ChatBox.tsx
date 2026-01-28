@@ -21,7 +21,7 @@ export const ChatBox = ({
         alt={model === "gemini" ? "gemini-icon" : "openai-icon"}
         className="object-contain py-1"
       />
-      <p className="grow">{message}</p>
+      <p className="grow text-sm">{message}</p>
     </div>
   );
 };

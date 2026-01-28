@@ -12,7 +12,7 @@ export const NavBar = ({
     <div className="h-10 min-w-screen flex justify-between items-center px-10 py-8 border-white">
       <Link
         href={"/"}
-        className="tracking-tighter font-mono font-bold text-2xl"
+        className="tracking-tighter font-mono font-semibold text-2xl"
       >
         Deriv AI
       </Link>
