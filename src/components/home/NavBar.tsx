@@ -18,7 +18,7 @@ export const NavBar = ({
       </Link>
       <div>
         <p className="font-mono">
-          <span>Total Balance </span>
+          <span className="tracking-tighter text-sm">Total Balance </span>
           <span className="font-bold font-xl">{currBalance.toFixed(1)}$</span>
         </p>
         <p className="font-mono">
